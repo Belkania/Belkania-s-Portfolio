@@ -1,0 +1,84 @@
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(228, 160, 205, 0) 1%,
+    rgb(22, 42, 80) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.mainContainer h1 {
+  font-size: 44px;
+  font-style: italic;
+}
+
+.projectsContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000b6;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project:hover .description {
+  transform: scale(1);
+}
+.description h2 {
+  color: white;
+}
+.description p {
+  color: white;
+}
+.projectButton {
+  width: 100px;
+  height: 30px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.projectButton:hover {
+  transform: translate(0, 10px);
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+  border: 2px solid black;
+}

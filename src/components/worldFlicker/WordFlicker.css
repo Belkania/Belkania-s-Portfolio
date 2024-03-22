@@ -1,0 +1,8 @@
+.word {
+  width: 100%;
+  height: 100px;
+  color: #484848;
+  font: 700 normal 2.5em "tahoma";
+  font-size: 55px;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
