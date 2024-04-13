@@ -9,7 +9,7 @@ import Story from "./components/story/Story";
 function App() {
   return (
     <div className="App">
-      <AnimatedCursor />
+      {/* <AnimatedCursor /> */}
       <Header />
       <Story />
       <Knowledge />

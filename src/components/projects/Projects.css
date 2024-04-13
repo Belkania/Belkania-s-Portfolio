@@ -12,8 +12,20 @@
   padding: 20px 0;
 }
 .mainContainer h1 {
-  font-size: 44px;
-  font-style: italic;
+  font-size: 5vw;
+  color: #484848;
+  font-family: monospace;
+}
+.mainContainer span {
+  margin-right: 5px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.mainContainer span:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  transform: translate(0, 10px);
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .projectsContainer {

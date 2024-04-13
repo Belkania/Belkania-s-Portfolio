@@ -15,7 +15,30 @@ const Projects = () => {
 
   return (
     <div className="mainContainer">
-      <h1>Practice makes perfect</h1>
+      <h1>
+        <span>P</span>
+        <span>r</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span> </span>
+        <span>M</span>
+        <span>a</span>
+        <span>k</span>
+        <span>e</span>
+        <span>s</span>
+        <span> </span>
+        <span>P</span>
+        <span>e</span>
+        <span>r</span>
+        <span>f</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
       <div className="projectsContainer">
         <div className="project">
           <img src={pigGame} alt="pig game" />

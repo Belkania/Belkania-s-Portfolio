@@ -66,6 +66,10 @@ const Knowledge = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5, // Adjust this value according to when you want the animation to start
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -78,7 +82,7 @@ const Knowledge = () => {
   }, [knowledgeItems.length]);
 
   return (
-    <div className="knowledge">
+    <div ref={ref} className={`knowledge ${inView ? "visible" : ""}`}>
       <div class="sign">
         <span class="fast-flicker">s</span>kil<span class="flicker">l</span>s
       </div>
