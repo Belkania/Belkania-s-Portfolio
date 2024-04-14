@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ResumeSvg from "../svg/Resume";
 import GitHubSvg from "../svg/GitHubSvg";
 import Facebook from "../header/img/facebook.png";
@@ -25,6 +25,22 @@ const NavBar = () => {
     }
     setIsMenuClicked(!isMenuClicked);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 590 && isMenuClicked) {
+        setBurgerClass("unclicked");
+        setMenuClass("hidden");
+        setIsMenuClicked(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isMenuClicked]);
 
   return (
     <>

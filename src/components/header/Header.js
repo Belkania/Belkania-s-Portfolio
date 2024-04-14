@@ -1,3 +1,4 @@
+import React from "react";
 import Logo from "../logo/Logo";
 import NavBar from "../navbar/NavBar";
 import GitHubSvg from "../svg/GitHubSvg";
@@ -9,9 +10,16 @@ import Linkedin from "./img/linkedin.png";
 import "./Header.css";
 
 const Header = () => {
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="header">
-      <Logo />
+      <Logo onClick={handleLogoClick} />
       <NavBar />
       <h1>
         <span>I</span>M<span>POSSIBLE</span>
